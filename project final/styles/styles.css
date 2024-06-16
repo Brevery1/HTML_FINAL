@@ -1,0 +1,187 @@
+html {
+  height: 100vh;
+}
+body { /* main body settings */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #E6FBFF;
+  font-size: 1em;
+  color: #000;
+  display: flex;
+  flex-flow: column;
+  min-height: 100%;
+  overflow-y: auto;
+}
+header {
+  position: relative;
+}
+header::after { /* company logo */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  background: url("../pics/logo.png") left top  / contain no-repeat;
+}
+h1 { /* h1 style */
+  font-size: 2em;
+  padding: .7em;
+  background: #FF7C00;
+  color: #00404D;
+  text-align: center;
+  margin: 0;
+  position: relative;
+}
+
+.menu { /* header menu style */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #00404D;
+  color: #EEE;
+  text-align: center;
+}
+
+.menu-item { /* header menu every element style */
+  display: inline-block;
+}
+.menu-ref { /* removal of the ugly text link */
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+  color: inherit;
+}
+.menu-ref:hover {
+  background: #407580;
+  color: #fff;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+main {
+  padding: 4em 10% 2em;
+  flex: 1 1 auto;
+}
+.mainmain{ /* centralization of elements in the main body */
+  text-align: center;
+  padding-top: 1em;
+}
+
+.plane { /* making the pictures on the main page more apealing */
+  filter: grayscale(.5);
+  transition: filter .3s;
+}
+.plane:hover { 
+  filter: none;
+}
+.columns { /* making so that the 2 pictures would be on the same level */
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 3em;
+}
+.column { /* column for text on "about us" page*/
+  flex: 1 1 40%;
+  min-width: 30em;
+}
+.img-plane { /* correctng the scailing of imagis on the "choose flight" page */
+  width: 100%;
+}
+.input-block { /* input boxes style */
+  display: flex;
+  align-items: center;
+  margin: 0 0 .6em 0;
+}
+.input-label { /* input labels style */
+  flex: 1 1 30%;
+  display: block;
+  padding: 1.5em 0 .2em;
+}
+.input-block > .input-label {
+  padding: 0;
+}
+.input-item { /* multiple choice selection input box style */
+  flex: 2 1 50%;
+  width: 50%;
+  max-width: 40em;
+  padding: 1em;
+  margin: o;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: .3em;
+  box-sizing: border-box;
+  background: #FFF2E6;
+  color: #000;
+}
+
+.input-submit { /* submit button */
+  font-size: 1.2em;
+  background-color: #FF7C00;
+  color: #000;
+  padding: 1em 2em;
+  margin: 1em 0;
+  border: none;
+  border-radius: .3em;
+  cursor: pointer;
+}
+
+.input-submit:hover {
+  background-color: #00D7FF;
+  color: #FFF;
+  transition: .3s;
+}
+
+.choose_flight1{
+  text-align: center;
+}
+
+.weather { /* remocal of the border gaps and streaching of the grid itself */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+}
+th, td { /* wether grid settings */
+  padding: .6em 1em;
+  border: 1px solid rgba(128,128,128,.3);
+  text-align: center;
+}
+th:empty { /* removal of the emty boxes */
+  border: none;
+}
+
+footer { /* main footer settings */
+  background: url("../pics/logo.png") left top  / contain no-repeat #805F40;
+  color: #fff;
+  min-height: 6em;
+  text-align: center;
+}
+.center, /* deviding the footer in to 3 collums */
+.right,
+.left {
+  flex: 1 1 30%;
+}
+.center {
+  text-align: center;
+}
+.right{
+  text-align: right;
+  padding-right: 1em;
+}
+.footer-ref {
+  text-decoration: none;
+  padding-top: .5em;
+  color: inherit;
+}
+.rightfooter {
+  list-style: none;
+}
+
+

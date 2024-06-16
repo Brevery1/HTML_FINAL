@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/j.js" async></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>choosing flight</title>
+</head>
+<body>
+    <header class="all-header">
+        <h1>
+            Belgrad Flights
+        </h1>
+        <ul class="menu">
+            <li class="menu-item"><a class="menu-ref" href="main.html">home</a>
+            <li class="menu-item"><a class="menu-ref" href="about_us.html">about us</a>
+            <li class="menu-item"><a class="menu-ref" href="gallery.html">gallery</a>
+            <li class="menu-item"><a class="menu-ref" href="blog.html">blog</a>
+            <li class="menu-item"><a class="menu-ref" href="contact_us.html">contact us</a>
+            <li class="menu-item"><a class="menu-ref" href="video_gal.html">Video Gallery</a>
+        </ul>
+    
+     </header>  
+     <main>
+        <h2 class="mainmain">Belgrade to Novi-sad</h2>
+        <div class="columns">
+            <div class="choose_flight1 column">
+                <img class="img-plane" src="pics/novi-sad.jpeg" alt="plane">
+                <table class="weather" id="weather" data-latitude="45.255" data-longitude="19.844722">
+                    <tr>
+                        <th></th>
+                        <th>Now</th>
+                        <th>Tomorow</th>
+                        <th>In 2 days</th>
+                    </tr>
+                    <tr>
+                        <th>Temperature °C</th>
+                        <td id="tnow"></td>
+                        <td id="t1"></td>
+                        <td id="t2"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind kmh</th>
+                        <td id="wnow"></td>
+                        <td id="w1"></td>
+                        <td id="w2"></td>
+                    </tr>
+                </table>
+            </div>
+            <form class="column form">
+                <div class="input-block">
+                    <label class="input-label" for="fname">First name</label>
+                    <input class="input-item" type="text" id="fname" name="firstname"  placeholder="name..">
+                </div>
+                
+                <div class="input-block">
+                    <label class="input-label" for="lname">Last  name</label>
+                    <input class="input-item" type="text" id="lname" name="lastname" placeholder="last name..">
+                </div>
+                
+                <div class="input-block">
+                    <label class="input-label" for="phone">Your phone number</label>
+                    <input class="input-item" type="tel" id="phone" name="phone" placeholder="phone number..">
+                </div>
+
+                <div class="input-block">
+                    <label class="input-label" for="email">Your email</label>
+                    <input class="input-item" type="email" id="email" name="email" placeholder="email.."> 
+                </div>
+                
+                <div class="input-block">
+                    <label class="input-label" for="passport">Passport id</label>
+                    <input class="input-item" type="text" id="passport" name="passport" placeholder="passport id..">
+                </div>
+
+                <div class="input-block">
+                    <label class="input-label" for="dateofb">Departure date </label>
+                    <input class="input-item" type="date" id="dateofb" name="date" placeholder="date of Flight..">
+                </div>
+
+                <div class="input-block">
+                    <label class="input-label" for="class">Seat class</label>
+                    <select class="input-item" id="class" name="class">
+                        <option value="placeholder">choose seat class..</option>
+                        <option value="1st class">1st class</option>
+                        <option value="buisness">buisness</option>
+                        <option value="econom">econom</option>
+                    </select>
+                </div>
+
+                <div class="input-block">
+                    <label class="input-label" for="seat">Prefered seat placement</label>
+                    <select class="input-item" id="seat" name="seat">
+                    <option value="placeholder">choose seat position..</option>
+                    <option value="window">window</option>
+                    <option value="corridor">corridor</option>
+                    <option value="any seat">any seat</option>
+                    </select>
+                </div>
+
+                <div class="input-block">
+                    <label class="input-label" for="time">departure time</label>
+                    <select class="input-item" id="time" name="time">
+                        <option value="placeholder">departure time..</option>
+                        <option value="morning">7:00</option>
+                        <option value="day">12:50</option>
+                        <option value="eavning">18:20</option>
+                    </select>
+                </div>
+                
+                <input class="input-submit" type="submit" value="Submit">
+            </form>
+        </div>
+     </main>
+
+     <footer class="columns">
+        <div class="left">
+    
+        </div>
+        <div class="center">
+            <p>We provide the best booking expireance!</p>
+            <p>If you look at us in a vacum</p>
+        </div>
+        <div class="right">
+            <ul>
+                <li class="rightfooter"><a class="footer-ref" href="https://twitter.com/?lang=en">Twitter</a>
+                <li class="rightfooter"><a class="footer-ref" href="https://www.instagram.com/">Instagram</a>
+            </ul>
+            <p>Copyright © 2024 Belgrad Flights</p>
+        </div>
+    </footer> 
+</body>
